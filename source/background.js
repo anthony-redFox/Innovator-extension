@@ -4,7 +4,8 @@ function parseStartItem(startItem) {
 	const [itemTypeName, itemID, versionModificator] = (startItem || "").split(
 		":"
 	);
-	if (itemTypeName && itemID) {
+	// ItemID must be UUID
+	if (itemTypeName && itemID && itemID.length === 32) {
 		return {
 			itemTypeName,
 			itemID,
