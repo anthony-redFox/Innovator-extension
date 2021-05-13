@@ -1,8 +1,8 @@
 {
-	"name": "Aras Innovator",
+	"name": "Innovator Extension",
 	"version": "0.0.1",
 	"author": "Anton Shchekota",
-	"description": "Aras Innovator browser extension which improving to work with Start Item functionality",
+	"description": "Innovator browser extension which improving work with Start Item functionality",
 	"homepage_url": "https://github.com/anthony-redFox/Innovator-extension",
 	"manifest_version": 2,
 	"minimum_chrome_version": "74",
