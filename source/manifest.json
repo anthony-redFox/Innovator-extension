@@ -1,21 +1,18 @@
 {
 	"name": "Innovator Extension",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Anton Shchekota",
 	"description": "Innovator browser extension which improving work with Start Item functionality",
 	"homepage_url": "https://github.com/anthony-redFox/Innovator-extension",
-	"manifest_version": 2,
-	"minimum_chrome_version": "74",
+	"manifest_version": 3,
+	"minimum_chrome_version": "100",
 	"icons": {
 		"128": "icon.png"
 	},
-	"permissions": [
-		"tabs", "activeTab", "<all_urls>"
-	],
+	"permissions": ["tabs", "activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"],
 	"background": {
-		"persistent": false,
-		"scripts": [
-			"background.js"
-		]
+		"service_worker": "background.js",
+		"type": "module"
 	}
 }
